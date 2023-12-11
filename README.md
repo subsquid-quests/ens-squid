@@ -91,7 +91,7 @@ sqd --version
 ```
 A healthy response should look similar to
 ```
-@subsquid/cli/2.5.0 linux-x64 node-v20.5.1
+@subsquid/cli/2.6.1 linux-x64 node-v20.5.1
 ```
 
 ### III. Run the squid
