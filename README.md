@@ -14,7 +14,7 @@
 
 # Deploy an ENS squid
 
-This is a quest to run a squid migrated from the [ENS subgraph](https://thegraph.com/hosted-service/subgraph/ensdomains/ens) by [ind](https://github.co), one of the winners of the [migration quest](https://github.com/subsquid-quests/ens-subgraph-migration). You can find the original repository [here](https://github.co).
+This is a quest to run a squid migrated from the [ENS subgraph](https://thegraph.com/hosted-service/subgraph/ensdomains/ens) by [RicqCodes](https://github.com/RicqCodes), one of the winners of the [migration quest](https://github.com/subsquid-quests/ens-subgraph-migration). You can find the original repository [here](https://github.com/RicqCodes/ens_migration_subsquid).
 
 Here is how to run the squid:
 
@@ -98,14 +98,14 @@ A healthy response should look similar to
 
 1. Open a terminal and run the following commands to create the squid and enter its folder:
    ```bash
-   sqd init my-ens-squid -t https://github.com/subsquid-quests/snapshot-squid
+   sqd init my-ens-squid -t https://github.com/subsquid-quests/ens-squid
    ```
    ```bash
    cd my-ens-squid
    ```
    You can replace `my-ens-squid` with any name you choose for your squid. If a squid with that name already exists in [Subsquid Cloud](https://docs.subsquid.io/cloud/), the first command will throw an error; if that happens simply think of another name and repeat the commands.
 
-2. Press "Get Key" button in the quest card to obtain the `snapshot.key` key file. Save it to the `./query-gateway/keys` subfolder of the squid folder. The file will be used by the query gateway container.
+2. Press "Get Key" button in the quest card to obtain the `ens.key` key file. Save it to the `./query-gateway/keys` subfolder of the squid folder. The file will be used by the query gateway container.
 
 3. The template squid uses a PostgreSQL database and a query gateway. Start Docker containers that run these with
    ```bash
