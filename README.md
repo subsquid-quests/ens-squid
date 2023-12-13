@@ -148,10 +148,17 @@ A healthy response should look similar to
    [processor] 23:33:52 INFO  sqd:processor 11005159 / 18377705, rate: 1756 blocks/sec, mapping: 352 blocks/sec, 311 items/sec, eta: 1h 10m
    [processor] 23:33:57 INFO  sqd:processor 11010199 / 18377705, rate: 1735 blocks/sec, mapping: 488 blocks/sec, 428 items/sec, eta: 1h 11m
    ```
-   The squid should sync in about 12 hours. When it's done, stop it with Ctrl-C, then stop and remove the auxiliary containers with
+   The squid should sync for about 12 hours for quest completion. Do not worry if it emits some messages like this one:
+   ```
+   [processor] 06:07:57 ERROR sqd:processor:mapping reange error from decoding text without value
+   ```
+   This is normal.
+
+6. When done, stop the squid with Ctrl-C, then stop and remove the auxiliary containers with
    ```bash
    sqd down
    ```
+
 
 # Quest Info
 
