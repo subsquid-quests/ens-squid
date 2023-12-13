@@ -29,7 +29,7 @@ export const NAME_WRAPPER_CONTRACT =
 
 export const processor = new EvmBatchProcessor()
   .setDataSource({
-    archive: lookupArchive("eth-mainnet")
+    archive: 'http://localhost:8000/network/ethereum-mainnet'
   })
   .setFields({
     log: {
