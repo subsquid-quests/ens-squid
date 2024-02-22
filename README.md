@@ -191,7 +191,7 @@ A healthy response should look similar to
 > [!TIP]
 > Do not worry if the squid fails: any progress it made is saved. Simply restart it if it happens.
 
-When done, stop the squid processor with Ctrl-C, then stop and remove the query gateway container with
+When done, stop the squid processor with Ctrl-C, then stop and remove the auxiliary containers with
 ```bash
 sqd down
 ```
